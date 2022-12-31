@@ -1,0 +1,10 @@
+php_value session.gc_maxlifetime 315360000
+php_value session.cookie_lifetime 315360000
+php_value session.use_cookies 1
+
+RewriteEngine On
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+ErrorDocument 404 /404.php
