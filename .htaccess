@@ -9,3 +9,4 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
 ErrorDocument 404 /404.html
 RewriteRule ^free-code-1$ download/code/free/ff/Vongquaybts.zip [L]
+RewriteRule ^mini-game$ mini-game.html [L]
